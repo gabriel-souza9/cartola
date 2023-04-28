@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import service from './service'
 import './App.css'
+import imgcartola from '../public/Cartola FC.svg'
 
 function App() {
   const [atletas, setAtletas] = useState([])
@@ -15,11 +16,14 @@ function App() {
     }
     console.table(atletas)
     
-  },[atletas])
+  },[])
 
   return (
     <div className='app'>
-      <h1>Jogadores</h1>
+      <header className='header'>
+       <img src={imgcartola} alt="" />
+      </header>
+
       <table className='table'>
         <thead>
           <tr>
@@ -28,7 +32,7 @@ function App() {
           </tr>
         </thead>
 
-        <tbody>
+        {/* <tbody>
           {atletas.map((jogador, index) => (
             <tr key={index}>
               <td>
@@ -39,7 +43,7 @@ function App() {
               </td>
             </tr>
           ))}
-        </tbody>
+        </tbody> */}
 
       </table>
     </div>
