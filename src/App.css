@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.table tr{
+  display: flex;
+  gap: 2rem;
+}
+
+.table thead td {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
